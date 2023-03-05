@@ -90,4 +90,49 @@ nnoremap <SPACE> <Nop>
 nnoremap <leader>f :action FindInPath<cr>
 vnoremap <leader>f :action FindInPath<cr>
 nnoremap <leader>w <c-w>
+noremap <leader>e $
+noremap <leader>q :q<Enter>
+
+"vnoremap <leader><s-1> "1y
+vnoremap <leader>y "+y
+noremap <leader>p "+p
+
+vnoremap <leader>x "xy
+noremap <leader>X "xp
+
+inoremap <s-1> !
+
+noremap <leader>5 :source ~/.ideavimrc
+
+noremap <c-a> ggvG
+
+
+"nnoremap <leader>1 :action com.mnw.tabmover.actions.MoveFocusToNextWindow<Enter>     
+"nnoremap <leader>2 :action com.mnw.tabmover.actions.MoveFocusToPreviousWindow<Enter> 
+"nnoremap <leader>3 :action com.mnw.tabmover.actions.MovePinnedTabsToFirst<Enter>     
+
+" tab Left
+nnoremap <leader>hh :action com.mnw.tabmover.actions.MoveTabUpAction <Enter>           
+" tab Right
+nnoremap <leader>ll :action com.mnw.tabmover.actions.MoveTabDownAction <Enter>         
+
+
+
+"nnoremap <leader>f :action com.mnw.tabmover.actions.MoveTabToFirstAction<Enter>      
+"nnoremap <leader>f :action com.mnw.tabmover.actions.MoveTabToLastAction<Enter>       
+"nnoremap <leader>f :action com.mnw.tabmover.actions.MoveTabToNewWindow<Enter>        
+
+"nnoremap <leader>1 :action com.mnw.tabmover.actions.MoveTabToNextSplitter<Enter>
+nnoremap <leader>kk :action com.mnw.tabmover.actions.MoveTabToNextWindow<Enter>       
+
+"nnoremap <leader>2 :action com.mnw.tabmover.actions.MoveTabToPreviousSplitter<Enter>
+nnoremap <leader>jj :action com.mnw.tabmover.actions.MoveTabToPreviousWindow<Enter>   
+
+"nnoremap <leader>f :action com.mnw.tabmover.actions.ShowTabMoveActions<Enter>        
+"nnoremap <leader>f :action com.mnw.tabmover.actions.TogglePinOnAllOpenTabsAction<Enter>
+
+
+
+
+ 
 
