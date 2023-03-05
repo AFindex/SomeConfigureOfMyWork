@@ -1,0 +1,505 @@
+{
+    "workbench.editorAssociations": {
+        "*.sav": "default"
+    },
+    "editor.autoClosingQuotes": "always",
+    "editor.autoSurround": "brackets",
+    "editor.autoClosingBrackets": "always",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.maxMemoryForLargeFilesMB": 9096,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "length": 2000,
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false
+    },
+    "vscode-neovim.useWSL": false,
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\nvim-win64\\nvim-win64\\bin\\nvim.exe",
+    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\Administrator\\AppData\\Local\\nvim\\init.vim",
+    "vscode-neovim.highlightGroups.unknownHighlight": "vim",
+    "editor.scrollBeyondLastLine": false,
+    "workbench.colorCustomizations": {
+        "peekViewEditor.background": "#01041a",
+        "peekViewResult.background": "#054c8a",
+        "peekView.border": "#04fafa"
+    },
+    "vim.leader": "<Space>",
+    "vim.showcmd": true,
+    "vim.showMarksInGutter": true,
+    "vim.inccommand": "append",
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.sneak": true,
+    "vim.easymotion": true,
+    "vim.startofline": false,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "y"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardCopyAction",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [
+                "<ESC>"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardPasteAction",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.jumpToBracket",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.selectToBracket",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "C-f"
+            ],
+            "after": [],
+        },
+        {
+            "before": [
+                "C-b"
+            ],
+            "after": [],
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [
+                "<ESC>"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardPasteAction",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "C-f"
+            ],
+            "after": [],
+        },
+        {
+            "before": [
+                "C-b"
+            ],
+            "after": [],
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.jumpToBracket",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.selectToBracket",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "h"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupLeft",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupRight",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j",
+                "j"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupDown",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k",
+                "k"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupUp",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "after": [
+                "<C-w>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "hydra.show",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "-"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.increaseViewSize",
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "="
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.decreaseViewSize",
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "j"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveEditorToBelowGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "k"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveEditorToAboveGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "h"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveEditorToLeftGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveEditorToRightGroup",
+                    "args": []
+                }
+            ]
+        },
+    ],
+    "hydra.commands": [
+        {
+            "key": "w",
+            "desc": "workbench commands",
+            "children": [
+                {
+                    "key": "o",
+                    "desc": "Open sidebar views",
+                    "children": [
+                        {
+                            "key": "e",
+                            "desc": "Open explorer",
+                            "commands": [
+                                "workbench.view.explorer"
+                            ]
+                        },
+                        {
+                            "key": "E",
+                            "desc": "Open extensions",
+                            "commands": [
+                                "workbench.view.extensions"
+                            ]
+                        },
+                        {
+                            "key": "s",
+                            "desc": "Open SCM",
+                            "commands": [
+                                "workbench.view.scm"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "t",
+                    "desc": "Toggle commands",
+                    "children": [
+                        {
+                            "key": "s",
+                            "desc": "toggle side bar",
+                            "commands": [
+                                "workbench.action.toggleSidebarVisibility",
+                                "workbench.action.toggleActivityBarVisibility"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        // 注释测试
+        {
+            "key": "t",
+            "desc": "终端管理...",
+            "children": [
+                {
+                    "key": "t",
+                    "desc": "新建终端",
+                    "commands": [
+                        "workbench.action.terminal.new"
+                    ]
+                },
+                {
+                    "key": "n",
+                    "desc": "下一个终端",
+                    "commands": [
+                        "workbench.action.terminal.focusNext"
+                    ]
+                },
+                {
+                    "key": "p",
+                    "desc": "上一个终端",
+                    "commands": [
+                        "workbench.action.terminal.focusPrevious"
+                    ]
+                },
+                {
+                    "key": "c",
+                    "desc": "关闭终端",
+                    "commands": [
+                        "workbench.action.terminal.kill"
+                    ]
+                }
+            ]
+        },
+    ],
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.lineNumbers": "relative",
+    "workbench.colorTheme": "Kimbie Dark",
+    "editor.mouseWheelZoom": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "remote.SSH.remotePlatform": {
+        "region-102.seetacloud.com": "linux"
+    }
+}
