@@ -12,12 +12,11 @@ set incsearch
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
-
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
 "map \r <Action>(ReformatCode)
 
-"" Map <leader>d to start debug
+"" Map <lader>d to start debug
 "map <leader>d <Action>(Debug)
 inoremap jk <Esc>
 
@@ -104,9 +103,7 @@ inoremap <s-1> !
 
 noremap <leader>5 :source ~/.ideavimrc
 
-noremap <c-a> ggvG
-
-
+" noremap <c-a> ggvG
 "nnoremap <leader>1 :action com.mnw.tabmover.actions.MoveFocusToNextWindow<Enter>     
 "nnoremap <leader>2 :action com.mnw.tabmover.actions.MoveFocusToPreviousWindow<Enter> 
 "nnoremap <leader>3 :action com.mnw.tabmover.actions.MovePinnedTabsToFirst<Enter>     
@@ -128,11 +125,28 @@ nnoremap <leader>kk :action com.mnw.tabmover.actions.MoveTabToNextWindow<Enter>
 "nnoremap <leader>2 :action com.mnw.tabmover.actions.MoveTabToPreviousSplitter<Enter>
 nnoremap <leader>jj :action com.mnw.tabmover.actions.MoveTabToPreviousWindow<Enter>   
 
+" move To Up
+nnoremap <leader>tk :action TabShiftActions.ShiftUp<Enter> 
+" move To left
+nnoremap <leader>th :action TabShiftActions.ShiftLeft<Enter> 
+" move To Down
+nnoremap <leader>tj :action TabShiftActions.ShiftDown<Enter> 
+" move To right
+nnoremap <leader>tl :action TabShiftActions.ShiftRight<Enter> 
+
+
+nnoremap sk :action TabShiftActions.StretchUp<Enter> 
+nnoremap sh :action TabShiftActions.StretchLeft<Enter> 
+nnoremap sj :action TabShiftActions.StretchDown<Enter> 
+nnoremap sl :action TabShiftActions.StretchRight<Enter> 
+nnoremap <leader>- :action TabShiftActions.StretchRight<Enter> :action TabShiftActions.StretchDown<Enter> 
+nnoremap <leader>= :action TabShiftActions.StretchLeft<Enter> :action TabShiftActios.StretchUp<Enter> 
+
+
+nnoremap <leader>u- :action TabShiftActions.StretchRight<Enter> :action TabShiftActions.StretchDown<Enter> :action TabShiftActions.StretchRight<Enter> :action TabShiftActions.StretchDown<Enter> :action TabShiftActions.StretchRight<Enter> :action TabShiftActions.StretchDown<Enter> :action TabShiftActions.StretchRight<Enter> :action TabShiftActions.StretchDown<Enter> :action TabShiftActions.StretchRight<Enter> :action TabShiftActions.StretchDown<Enter> :action TabShiftActions.StretchRight<Enter> :action TabShiftActions.StretchDown<Enter> 
+nnoremap <leader>u= :action TabShiftActions.StretchLeft<Enter> :action TabShiftActios.StretchUp<Enter> :action TabShiftActions.StretchLeft<Enter> :action TabShiftActios.StretchUp<Enter> :action TabShiftActions.StretchLeft<Enter> :action TabShiftActios.StretchUp<Enter> :action TabShiftActions.StretchLeft<Enter> :action TabShiftActios.StretchUp<Enter> :action TabShiftActions.StretchLeft<Enter> :action TabShiftActios.StretchUp<Enter> :action TabShiftActions.StretchLeft<Enter> :action TabShiftActios.StretchUp<Enter> 
 "nnoremap <leader>f :action com.mnw.tabmover.actions.ShowTabMoveActions<Enter>        
 "nnoremap <leader>f :action com.mnw.tabmover.actions.TogglePinOnAllOpenTabsAction<Enter>
-
-
-
+" let g:WhichKeyDesc_windows_maximize = "<leader>wm maximize"
 
  
-
