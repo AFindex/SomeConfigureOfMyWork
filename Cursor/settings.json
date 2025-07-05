@@ -1,0 +1,614 @@
+{
+    "python.autoComplete.extraPaths": [
+        "C:/work/S18_PC/tools/PyMessiah/stubs"
+    ],
+    "workbench.editor.wrapTabs": true,
+    "security.workspace.trust.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editorAssociations": {
+        "*.sav": "default"
+    },
+    "python.linting.flake8Args": [
+        "--max-line-length=220"
+    ],
+    "extensions.experimental.affinity": {
+    	"vscodevim.vim": 1,
+    },
+    "regionHighlighter.borderStyle": "double",
+    "regionHighlighter.defaultTheme": "Rainbow",
+    "regionHighlighter.borderWidth": "10px",
+    "editor.autoClosingQuotes": "always",
+    "editor.autoSurround": "brackets",
+    "editor.autoClosingBrackets": "always",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false,
+        "length": 2000,
+        "yaml": false
+    },
+    "editor.scrollBeyondLastLine": false,
+    "workbench.colorCustomizations": {
+        "peekViewEditor.background": "#01041a",
+        "peekViewResult.background": "#054c8a",
+        "peekView.border": "#04fafa"
+    },
+    "vim.leader": "<Space>",
+    "vim.showcmd": true,
+    "vim.showMarksInGutter": true,
+    "vim.inccommand": "append",
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.sneak": true,
+    "vim.easymotion": true,
+    "vim.startofline": false,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "j",
+                "'",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>","f"
+            ],
+            "after": [
+                "y",
+                "/",
+                "<C-R>",
+                "\"",
+                "<Enter>"
+            ],
+        },
+        {
+            "before": [
+                "<leader>",
+                "y"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardCopyAction",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [
+                "<ESC>"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardPasteAction",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.jumpToBracket",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.selectToBracket",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "after": [
+                "<ESC>"
+            ],
+            "commands": [
+                {
+                    "command": "editor.actions.findWithArgs",
+                    "args": {
+                        "replaceString": " "
+                    }
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "after": [
+                "<ESC>"
+            ],
+            "commands": [
+                {
+                    "command": "editor.actions.findWithArgs",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "after": [
+                "1",
+                "2",
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<C-u>"
+            ],
+            "after": [
+                "1",
+                "2",
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<C-f>"
+            ],
+            "after": [
+                "2",
+                "5",
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<C-b>"
+            ],
+            "after": [
+                "2",
+                "5",
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "Q"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "h"
+            ],
+            "after": [
+                "<ESC>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.decreaseViewWidth",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "l"
+            ],
+            "after": [
+                "<ESC>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.increaseViewWidth",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "j"
+            ],
+            "after": [
+                "<ESC>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.decreaseViewHeight",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "k"
+            ],
+            "after": [
+                "<ESC>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.increaseViewHeight",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [
+                "<ESC>"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardPasteAction",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "C-f"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "C-b"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "h"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupLeft",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupRight",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j",
+                "j"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupDown",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k",
+                "k"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupUp",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "after": [
+                "<C-w>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "hydra.show",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "-"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.increaseViewSize"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "="
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.decreaseViewSize"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "j"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveEditorToBelowGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "k"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveEditorToAboveGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "h"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveEditorToLeftGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveEditorToRightGroup",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.mouseWheelZoom": true,
+    "remote.SSH.remotePlatform": {
+        "region-102.seetacloud.com": "linux",
+        "10.1.2.94": "macOS",
+        "10.10.10.32": "linux"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "git.autofetch": true,
+    "[css]": {
+        "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "git.confirmSync": false,
+    "hexeditor.columnWidth": 32,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
+    "blender.executables": [
+        {
+            "path": "c:\\Program Files (x86)\\Steam\\steamapps\\common\\Blender\\blender.exe",
+            "name": "",
+            "isDebug": false
+        }
+    ],
+    "python.languageServer": "Pylance",
+    "python.terminal.launchArgs": [],
+    "editor.largeFileOptimizations": false,
+    "git.openRepositoryInParentFolders": "never",
+    "explorer.confirmDelete": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "update.showReleaseNotes": false,
+    "settingsSync.ignoredSettings": [
+        "-vim.autoSwitchInputMethod.defaultIM",
+        "-vim.autoSwitchInputMethod.obtainIMCmd",
+        "-vim.autoSwitchInputMethod.switchIMCmd"
+    ],
+    "vim.autoSwitchInputMethod.enable": true,
+    "explorer.confirmDragAndDrop": false,
+    "editor.minimap.enabled": false,
+    "z-reader.onlineSite": "起点",
+    "sudoku.gameTheme": "editor",
+    "python.analysis.extraPaths": [
+        "C:/work/S18_PC/tools/PyMessiah/stubs"
+    ],
+    "security.allowedUNCHosts": [
+        "wsl$"
+    ],
+    "peacock.surpriseMeOnStartup": true,
+    "peacock.affectPanelBorder": true,
+    "peacock.affectSideBarBorder": true,
+    "peacock.affectStatusAndTitleBorders": true,
+    "peacock.affectTabActiveBorder": true,
+    "peacock.affectEditorGroupBorder": true,
+    "peacock.affectDebuggingStatusBar": true,
+    "editor.glyphMargin": true,
+    "vscode-double-line-numbers.text.height": "65",
+    "vscode-double-line-numbers.text.width": "98",
+    "vscode-double-line-numbers.font.weight": "700",
+    "zenMode.hideLineNumbers": false,
+    "CodeMaker.CodebaseDefaultAuthorizationPath": [
+        "c:\\work\\S18_PC\\src\\Package\\Script\\Python",
+        "c:\\work\\S18_Server\\asiocore"
+    ],
+    "workbench.startupEditor": "none",
+    "cmake.options.statusBarVisibility": "visible",
+    "files.associations": {
+        "*.h": "cpp"
+    },
+    "cmake.showOptionsMovedNotification": false,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "cursor.cpp.disabledLanguages": [
+        "markdown",
+        "scminput",
+        "yaml"
+    ],
+    "workbench.activityBar.orientation": "vertical",
+    "workbench.activityBar.location": "top",
+    "remote.autoForwardPortsSource": "hybrid",
+    "debug.allowBreakpointsEverywhere": true,
+    "debugpy.debugJustMyCode": false,
+    "csharp.debug.justMyCode": false,
+    "blender.addon.justMyCode": false,
+    "dotnet.server.useOmnisharp": true,
+    "extensions.ignoreRecommendations": true
+}

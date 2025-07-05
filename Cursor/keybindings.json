@@ -1,0 +1,307 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "command": "vscode-neovim.compositeEscape1",
+        "key": "j",
+        "when": "neovim.mode == insert",
+        "args": "j"
+    },
+    {
+        "command": "vscode-neovim.compositeEscape2",
+        "key": "k",
+        "when": "neovim.mode == insert",
+        "args": "k"
+    },
+    {
+        "command": "workbench.action.closeSidebar",
+        "key": "alt+b",
+        "when": "sideBarFocus ||gitlens.views.account.active"
+    },
+    {
+        "command": "workbench.action.focusSideBar",
+        "key": "alt+b",
+        "when": "editorFocus"
+    },
+    {
+        "command": "workbench.action.previousSideBarView",
+        "key": "alt+1",
+        "when": "sideBarFocus ||gitlens.views.account.active || codeMaker.webView.active || continue.continueGUIView.active"
+    },
+    {
+        "command": "workbench.action.nextSideBarView",
+        "key": "alt+2",
+        "when": "sideBarFocus || gitlens.views.account.active || codeMaker.webView.active || continue.continueGUIView.active"
+    },
+    {
+        "command": "workbench.action.focusActiveEditorGroup",
+        "key": "ctrl+1",
+        "when": "sideBarFocus ||gitlens.views.account.active"
+    },
+    {
+        "command": "editor.action.triggerSuggest",
+        "key": "alt+s",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "editor.action.showHover",
+        // "command": "toggleSuggestionDetails",
+        "key": "alt+d",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "selectPrevSuggestion",
+        "key": "alt+m",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "selectNextSuggestion",
+        "key": "alt+n",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "workbench.action.nextEditorInGroup",
+        "key": "alt+2",
+        "when": "editorTextFocus && !codemaker.view.active"
+    },
+    {
+        "command": "workbench.action.previousEditorInGroup",
+        "key": "alt+1",
+        "when": "editorTextFocus && !codemaker.view.active"
+    },
+    {
+        "command": "workbench.action.navigateBack",
+        "key": "ctrl+-",
+        "when": "editorTextFocus || sideBarFocus || terminalFocus ||gitlens.views.account.active"
+    },
+    {
+        "command": "workbench.action.navigatePreviousInNavigationLocations",
+        "key": "ctrl+=",
+        "when": "editorTextFocus || sideBarFocus || terminalFocus ||gitlens.views.account.active"
+    },
+    ////////////////////////////
+    // 选择上下文菜单的快捷键
+    ////////////////////////////
+    {
+        "key": "alt+n",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "alt+m",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    //
+    {
+        "key": "alt+n",
+        "command": "goToNextReferenceFromEmbeddedEditor",
+        "when": "inReferenceSearchEditor"
+    },
+    {
+        "key": "alt+m",
+        "command": "goToPreviousReferenceFromEmbeddedEditor",
+        "when": "inReferenceSearchEditor"
+    },
+    //
+    {
+        "key": "alt+n",
+        "command": "search.action.focusNextSearchResult",
+        "when": "hasSearchResult"
+    },
+    {
+        "key": "alt+m",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "hasSearchResult"
+    },
+    //
+    {
+        "key": "alt+n",
+        "command": "goToNextReference",
+        "when": "referenceSearchVisible"
+    },
+    {
+        "key": "alt+m",
+        "command": "goToPreviousReference",
+        "when": "referenceSearchVisible"
+    },
+    //
+    {
+        "key": "alt+n",
+        "command": "references-view.next",
+        "when": "reference-list.hasResult"
+    },
+    {
+        "key": "alt+m",
+        "command": "references-view.prev",
+        "when": "reference-list.hasResult"
+    },
+    //
+    {
+        "key": "alt+n",
+        "command": "references-view.next",
+        "when": "reference-list.hasResult"
+    },
+    {
+        "key": "alt+m",
+        "command": "references-view.prev",
+        "when": "reference-list.hasResult"
+    },
+    //
+    {
+        "key": "alt+n",
+        "command": "editor.action.scrollDownHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "alt+m",
+        "command": "editor.action.scrollUpHover",
+        "when": "editorHoverFocused"
+    },
+    ////////////////////////////
+    // 滚动
+    {
+        "key": "ctrl+f",
+        "command": "editorScroll",
+        "args": {
+            "by": "line",
+            "to": "down",
+            "value": 30,
+            "revealCursor": true,
+        },
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "editorScroll",
+        "args": {
+            "by": "line",
+            "to": "up",
+            "value": 30,
+            "revealCursor": true,
+        },
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "editorScroll",
+        "args": {
+            "by": "line",
+            "to": "down",
+            "value": 10,
+            "revealCursor": false,
+        },
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "editorScroll",
+        "args": {
+            "by": "line",
+            "to": "up",
+            "value": 10,
+            "revealCursor": false,
+        },
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "command": "editor.action.codeAction",
+        "key": "alt+enter",
+        "when": "editorTextFocus"
+    },
+    // 回退前进
+    {
+        "key": "ctrl+shift+-",
+        "command": "workbench.action.navigateForward",
+    },
+    // 缩放等
+    {
+        "key": "alt+=",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "alt+-",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.terminal.scrollUp",
+        "when": "terminalFocus"
+    },
+    // side bar 的快捷键
+    {
+        "command": "explorer.newFolder",
+        "key": "ctrl+m",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "command": "explorer.newFile",
+        "key": "ctrl+n",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "command": "copyFilePath",
+        "key": "ctrl+c",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "command": "workbench.action.closeActiveEditor",
+        "key": "space q",
+        "when": "!editorTextFocus && !terminalFocus && !workbench.view.search.active"
+    },
+    {
+        "key": "ctrl+l",
+        "when": "sideBarFocus ||gitlens.views.account.active",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            "workbench.action.moveSideBarRight",
+            "workbench.action.focusSideBar",
+          ]
+        },
+    },
+    {
+        "key": "ctrl+h",
+        "when": "sideBarFocus ||gitlens.views.account.active",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            "workbench.action.moveSideBarLeft",
+            "workbench.action.focusSideBar",
+          ]
+        },
+    },
+    {
+        "key": "alt+i",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    // search
+    {
+        "key": "shift shift",
+        "command": "workbench.action.findInFiles",
+        "when": "!view.workbench.view.search.visible"
+    },
+    {
+        "key": "shift shift",
+        "command": "workbench.action.findInFiles",
+        "when": "view.workbench.view.search.visible && !searchInputBoxFocus"
+    },
+    {
+        "key": "shift shift",
+        "command": "workbench.action.closeSidebar",
+        "when": "view.workbench.view.search.visible && searchInputBoxFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "composerMode.agent"
+    }
+]
